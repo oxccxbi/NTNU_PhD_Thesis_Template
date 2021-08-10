@@ -1,0 +1,57 @@
+\chapter[Introduction]{Introduction}
+\markboth{Chap. 1\ \ \enspace Introduction}{Chap 1. Introduction}
+
+\regularsection
+\headerregularsection
+
+\updatemylof % to be used with "list of figure divider per chapter" (see PREAMBLE)
+
+\begin{sloppypar} % to suppress overfull box
+
+Lorem \index{Lorem} ipsum dolor sit amet, consectetuer adipiscing elit \cite{LIUDIMULYO201767}. Ut purus \index{purus} elit,vestibulum ut, placerat ac, adipiscing vitae, felis \citenum{LIUDIMULYO201767}. Curabitur dictum \index{dictum} gravidamauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque \cite{liudimulyo_2018}. Pellentesque habitant morbi tristique senectuset netus et malesuada fames ac turpis egestas \index{egestas}\citenum{liudimulyo_2018}. Mauris ut leo. Cras viverra metusrhoncus sem \cite{2019liudimulyo}. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eutellus sit amet tortor gravida placerat \citenum{2019liudimulyo}. Integer sapien est, iaculis in, pretium quis,viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum \cite{liudimulyo2020853}. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at (\ref{fig:figures/paper-iv/fig-1}), mollis ac, nulla. Curabitur auctorsemper nulla \citenum{liudimulyo2020853}. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsaneleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum \cite{LIUDIMULYO201767,liudimulyo_2018,2019liudimulyo,liudimulyo2020853,liudimulyo_unpublished1,liudimulyo_unpublished2}.
+
+\end{sloppypar}
+
+\begin{figure} % \begin{figure} will let LaTeX decide the best figure placement for you ; \begin{figure}[H] for forcing the figure placement here ; in the bottom, \begin{figure}[!b] ; top of the page, \begin{figure}[!t]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/paper-iv/fig-1.png}
+    \caption[SEM images of AlN on graphene formed via different MEE cycles]{SEM images of AlN on graphene formed via different MEE cycles. (\textbf{a},\textbf{d}), (\textbf{b},\textbf{e}) and (\textbf{c},\textbf{f}) are (top-, bird’s eye-view) SEM images of samples A1, A2 and A3, respectively. Scale bars are 1 {\textmu}m. Features marked with yellow lines, yellow (orange) contours and yellow dashed outlines are high-density AlN nanostructures grown along line defects of graphene, individual (coalesced) AlN islands and areas of exposed graphene, respectively. Yellow arrows in samples A2 and A3 show the lateral growth of AlN nanostructures that initially nucleate at the line defects of graphene in sample A1 (adapted with permission from ref. \citenum{liudimulyo2020853} \copyright \ Liudi Mulyo \textit{et al}, 2020.}
+    \label{fig:figures/paper-iv/fig-1}
+\end{figure}
+
+\section{Section 1 in chapter 1}
+\lipsum[2]
+
+\begin{equation}
+    EQE = \frac{q \times P_{opt}}{I \times h\nu}
+\end{equation}
+
+\lipsum[3-4]
+
+\subsection{Subsection 1.1 of section 1 in chapter 1}
+\lipsum[5-7]
+
+\subsection{Subsection 1.2 of section 1 in chapter 1}
+\lipsum[8-10]
+
+\clearpage\phantomsection % to fix wrong hyperref to this section
+\section[Long section title displayed in the table of content]{Short section title in the chapter}
+\sectionmark{Even shorter title on the header}
+\lipsum[11-20]
+
+\subsection{Subsection 1.2 of section 2 in chapter 1}
+\lipsum[13-14]
+
+%=======================================================================
+%%% References 
+
+% \clearpage
+\phantomsection
+\specialsection % put an indent, see preamble
+\headerspecialsection
+
+{\hypersetup{urlcolor=ntnu,linkcolor=sophia} % set clickable URL title color to black, not ntnu like in the main document
+
+\bibliographystyle{unsrtnat-mod}  % NATBIB ref style
+\bibliography{references}
+}
