@@ -1,6 +1,7 @@
 \documentclass[11pt,b5paper]{book}
 
-\include{preamble}
+\input{preamble}
+\usepackage{silence}
 
 %=======================================================================
 \begin{document}
@@ -48,6 +49,9 @@
 % %   used with alternative 4, since "part page" linking in this alternative works 
 % %   also chapter* can also be recognized, despite its lacking
 
+  \listoffigures\addcontentsline{toc}{chapter}{List of Figures}
+  \listoftables\addcontentsline{toc}{chapter}{List of Tables}
+
   \listoffigures
   \listoftables
 
@@ -94,6 +98,8 @@
 
 % \cleardoublepage % intentionally put Colophon in the even page -> ignore the following error 
 % % "Package marginnote Warning: Consecutive odd pages found. Note, it is not recommended to use consecutive odd pages in a double-ended document. The pages of your document should always be a sequence: odd-even-odd-even-... Maybe you've forgotten a \cleardoublepage before changing the page numbering on page End-1."
+\WarningFilter{marginnote}{Consecutive odd pages found}
+
 \include{backmatter/colophon}
 
 \end{document}

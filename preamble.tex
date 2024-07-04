@@ -268,7 +268,7 @@
 \usepackage{bibentry}
 
 \usepackage[sectionbib]{chapterbib} % put ref at the end of each chapter. however, the spacing in the TOC will be messed up. it can be fixed using "numbib" option as shown below
-\usepackage[nottoc,numbib]{tocbibind} % numbib (for numbering reference section) is used to enable cross-ref with TOC
+\usepackage[nottoc,notlof,notlot,numbib]{tocbibind} % numbib (for numbering reference section) is used to enable cross-ref with TOC
 
 \usepackage{hypernat} % to fix the missing page citation "\usepackage[backref=page]{hyperref}" that is nested in between, e.g., 19 is not missing if the refs is from 18-20, i.e., "sort&compress" in natbib is activated
 
@@ -747,6 +747,6 @@
 
 % ============================================================%
 
-\usepackage[hhmmss]{datetime}
-\advance\currenthour by 2
+% \usepackage[hhmmss]{datetime}
+% \advance\currenthour by 2
 % activate this if "\noindent\emph{Final Version} as of \today \ at \ \currenttime" in backmatter/colophone is used
